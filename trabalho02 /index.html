@@ -1,1 +1,318 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conbran - Quadro de Inscrição</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+    <style>
+        body {
+            background-color: #f8f9fa;
+            font-family: Arial, sans-serif;
+        }
 
+        .section-title {
+            text-align: center;
+            font-size: 0.85rem;
+            font-weight: 600;
+            letter-spacing: 0.08em;
+            color: #444;
+            text-transform: uppercase;
+            margin-bottom: 0.35rem;
+        }
+
+        .title-divider {
+            width: 32px;
+            height: 3px;
+            background-color: #e67e22;
+            margin: 0 auto 1.5rem auto;
+        }
+
+        .table-wrapper-1 {
+            background: #fff;
+            border-radius: 8px;
+            padding: 2rem;
+            box-shadow: 0 2px 10px rgba(0,0,0,.08);
+        }
+
+        .tbl1 thead th {
+            font-size: 0.72rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            text-align: center;
+            vertical-align: middle;
+            padding: 0.6rem 0.5rem;
+            line-height: 1.3;
+        }
+
+        .tbl1 .th-categoria {
+            background-color: #e67e22;
+            color: #fff;
+            border: none;
+        }
+
+        .tbl1 .th-lote-closed {
+            background-color: #c0392b;
+            color: #fff;
+            border: none;
+        }
+
+        .tbl1 .th-lote-open {
+            background-color: #2980b9;
+            color: #fff;
+            border: none;
+        }
+
+        .tbl1 .th-lote-last {
+            background-color: #27ae60;
+            color: #fff;
+            border: none;
+        }
+
+        .tbl1 .badge-encerrado {
+            display: inline-block;
+            background-color: #c0392b;
+            color: #fff;
+            font-size: 0.6rem;
+            padding: 1px 5px;
+            border-radius: 3px;
+            margin-top: 2px;
+        }
+
+        .tbl1 .badge-encerrado-blue {
+            display: inline-block;
+            background-color: #2980b9;
+            color: #fff;
+            font-size: 0.6rem;
+            padding: 1px 5px;
+            border-radius: 3px;
+            margin-top: 2px;
+        }
+
+        .tbl1 tbody td {
+            font-size: 0.82rem;
+            text-align: center;
+            vertical-align: middle;
+            color: #333;
+        }
+
+        .tbl1 tbody td:first-child {
+            text-align: left;
+            color: #555;
+        }
+
+        .tbl1 tbody tr:nth-child(odd) {
+            background-color: #fafafa;
+        }
+
+        .table-wrapper-2 {
+            background: #fff;
+            border-radius: 8px;
+            padding: 2rem;
+            box-shadow: 0 2px 10px rgba(0,0,0,.08);
+        }
+
+        .tbl2 thead th {
+            font-size: 0.75rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            text-align: center;
+            vertical-align: middle;
+            padding: 0.7rem 1rem;
+        }
+
+        .tbl2 .th-categoria {
+            background-color: #e67e22;
+            color: #fff;
+            border: none;
+        }
+
+        .tbl2 .th-valor {
+            background-color: #2980b9;
+            color: #fff;
+            border: none;
+        }
+
+        .tbl2 tbody td {
+            font-size: 0.85rem;
+            text-align: center;
+            vertical-align: middle;
+            color: #333;
+        }
+
+        .tbl2 tbody td:first-child {
+            text-align: left;
+            color: #555;
+        }
+
+        .tbl2 tbody tr:nth-child(odd) {
+            background-color: #fafafa;
+        }
+
+        .btn-conheca {
+            background-color: #27ae60;
+            color: #fff;
+            font-size: 0.75rem;
+            font-weight: 700;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+            padding: 0.5rem 1.4rem;
+            border: none;
+            border-radius: 4px;
+        }
+
+        .btn-conheca:hover {
+            background-color: #219a52;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container py-5">
+
+   
+    <div class="table-wrapper-1 mb-5">
+        <p class="section-title">Adesão ao Congresso Brasileiro de Nutrição</p>
+        <div class="title-divider"></div>
+
+        <div class="table-responsive">
+            <table class="table tbl1 table-bordered mb-0">
+                <thead>
+                    <tr>
+                        <th class="th-categoria">
+                            Categoria de Inscrição<br>
+                            <span style="font-weight:400; text-transform:none; font-size:0.65rem;">
+                                confira a sua categoria e as opções de pagamento
+                            </span>
+                        </th>
+                        <th class="th-lote-closed">
+                            Lote Promocional<br>
+                            <span class="badge-encerrado">ENCERRADO</span><br>
+                            <span style="font-weight:400; font-size:0.65rem;">até 30/08/2025<br>parcelado em até 4x</span>
+                        </th>
+                        <th class="th-lote-closed">
+                            Lote 1°<br>
+                            <span class="badge-encerrado">ENCERRADO</span><br>
+                            <span style="font-weight:400; font-size:0.65rem;">até 09/01/2026<br>parcelado em até 3x</span>
+                        </th>
+                        <th class="th-lote-open">
+                            Lote 2°<br>
+                            <span class="badge-encerrado-blue">ENCERRADO</span><br>
+                            <span style="font-weight:400; font-size:0.65rem;">até 30/04/2026<br>parcelado em até 2x</span>
+                        </th>
+                        <th class="th-lote-last">
+                            Lote 3°<br>
+                            <span style="font-weight:400; font-size:0.65rem;">até 11/08/2026<br>e no local à vista</span>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Nutricionista Sócio*</td>
+                        <td>R$ 490,00</td>
+                        <td>R$ 590,00</td>
+                        <td>R$ 690,00</td>
+                        <td>R$ 850,00</td>
+                    </tr>
+                    <tr>
+                        <td>Nutricionista Não Sócio</td>
+                        <td>R$ 650,00</td>
+                        <td>R$ 750,00</td>
+                        <td>R$ 850,00</td>
+                        <td>R$ 990,00</td>
+                    </tr>
+                    <tr>
+                        <td>Pós-Graduando Sócio**<br><small>(Estudante de pós-graduação)</small></td>
+                        <td>R$ 490,00</td>
+                        <td>R$ 590,00</td>
+                        <td>R$ 690,00</td>
+                        <td>R$ 800,00</td>
+                    </tr>
+                    <tr>
+                        <td>Pós-Graduando Não Sócio<br><small>(Estudante de pós-graduação)</small></td>
+                        <td>R$ 600,00</td>
+                        <td>R$ 700,00</td>
+                        <td>R$ 800,00</td>
+                        <td>R$ 950,00</td>
+                    </tr>
+                    <tr>
+                        <td>Técnico em Nutrição e Dietética Sócio*</td>
+                        <td>R$ 390,00</td>
+                        <td>R$ 490,00</td>
+                        <td>R$ 590,00</td>
+                        <td>R$ 750,00</td>
+                    </tr>
+                    <tr>
+                        <td>Técnico em Nutrição e Dietética Não Sócio</td>
+                        <td>R$ 550,00</td>
+                        <td>R$ 650,00</td>
+                        <td>R$ 750,00</td>
+                        <td>R$ 900,00</td>
+                    </tr>
+                    <tr>
+                        <td>Estudante de Nutrição Sócio*</td>
+                        <td>R$ 330,00</td>
+                        <td>R$ 400,00</td>
+                        <td>R$ 500,00</td>
+                        <td>R$ 650,00</td>
+                    </tr>
+                    <tr>
+                        <td>Estudante de Nutrição Não Sócio</td>
+                        <td>R$ 490,00</td>
+                        <td>R$ 580,00</td>
+                        <td>R$ 680,00</td>
+                        <td>R$ 800,00</td>
+                    </tr>
+                    <tr>
+                        <td>Outros profissionais</td>
+                        <td>R$ 700,00</td>
+                        <td>R$ 800,00</td>
+                        <td>R$ 900,00</td>
+                        <td>R$ 1.050,00</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    
+    <div class="table-wrapper-2">
+        <p class="section-title">Adesão aos Cursos Pré-Congresso</p>
+        <div class="title-divider"></div>
+
+        <div class="table-responsive">
+            <table class="table tbl2 table-bordered mb-3">
+                <thead>
+                    <tr>
+                        <th class="th-categoria">Categoria</th>
+                        <th class="th-valor">Valor dos Cursos</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Profissionais (inscritos no congresso)</td>
+                        <td>R$ 80,00</td>
+                    </tr>
+                    <tr>
+                        <td>Estudantes (inscritos no congresso)</td>
+                        <td>R$ 60,00</td>
+                    </tr>
+                    <tr>
+                        <td>Inscrição somente no curso<br><small>(sem adesão ao congresso)</small></td>
+                        <td>R$ 160,00</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="text-center">
+            <button class="btn-conheca">Conheça Nossos Cursos</button>
+        </div>
+    </div>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
